@@ -1,116 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+/* Navigation */
+#navbar {
+    flex-direction: column;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Best Online Food Delivery Service in India | MyFoodServices.com</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
-</head>
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+/* Home section */
+#home{
+    height: 370px; 
+    padding: 3px 28px;
+}
 
-<body>
-    <nav id="navbar">
-        <div id="logo">
-            <img src="ujjwal.png" alt="MyFoodServices.com">
-        </div>
-        <ul>
-            <li class="item"><a href="#home">Home</a></li>
-            <li class="item"><a href="#services-container">Services</a></li>
-            <li class="item"><a href="#client-section">Our Clients</a></li>
-            <li class="item"><a href="#contact">Contact Us</a></li>
-        </ul>
-    </nav>
+#home::before{
+    height: 480px; 
+}
 
-    <section id="home">
-        <h1 class="h-primary">Welcome to MyFoodServices</h1>
-        <p></p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-        <button class="btn">Order Now</button>
-    </section>
+#home p{
+    font-size: 13px;
+}
 
-    <section id="services-container">
-        <h1 class="h-primary center">Our Services</h1>
-        <div id="services">
-            <div class="box">
-                <img src="img/1.png" alt="">
-                <h2 class="h-secondary center"> Food Catering</h2>
-                <p class="center">Give your body the nutrients it needs with a healthy meal on the go. You can count on us to keep you energized and ready for anything!</p>
-            </div>
-            <div class="box">
-                <img src="img/2.png" alt="">
-                <h2 class="h-secondary center">Bulk Ordering</h2>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+/* Services section  */
+#services{
+    flex-direction: column;
+}
 
-                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
-            </div>
-            <div class="box">
-                <img src="img/3.png" alt="">
-                <h2 class="h-secondary center">Online Delievery</h2>
-                <p class="center">Craving for food? We’ll deliver your late-night delicious food, straight to your doorstep, no matter what time it is..
-                </p>
-                <p class="center">
-                    Get Upto 60% off on your bill on orders above Rs 399/-
-                </p>
-                <p class="center">
-                    So, what are you waiting for...?? Order your food now.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section id="client-section">
-        <h1 class="h-primary center">Our Clients</h1>
-        <div id="clients">
-            <div class="client-item">
-                <img src="img/logo1.png" alt="Our Client">
-            </div>
-            <div class="client-item">
-                <img src="img/logo2.png" alt="Our Client">
-            </div>
-          
-            <div class="client-item">
-                <img src="img/logo4.png" alt="Our Client">
-            </div>
-            <div class="client-item">
-                <img src="img/logo3.png" alt="Our Client">
-            </div>
-        </div>
+#services .box { 
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
+}
 
-    </section>
+/* Clients section */
+#clients{
+    flex-wrap: wrap;
+}
 
-    <section id="contact">
-        <h1 class="h-primary center">Contact Us</h1>
-        <div id="contact-box">
-            <form action="">
-                <div class="form-group">
-                    <label for="name">Name: </label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email: </label>
-                    <input type="email" name="name" id="email" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number: </label>
-                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message: </label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-            </form>
-        </div>
-    </section>
+#clients img{
+    width: 66px;
+    padding: 6px;
+    height: auto;
+}
 
-    <footer>
-        <div class="center">
-            Copyright &copy; www.myOnlineMeal.com. All rights reserved!
-        </div>
-    </footer>
-</body>
+/* Contact us section */
+#contact-box form{
+    width:80%;
+}
+/* Footer */
 
-</html>
+/* Utility classes */
+.h-primary{
+    font-size:26px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
